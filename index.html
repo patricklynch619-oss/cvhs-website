@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Central Valley Home Services | Window Cleaning, Gutter Installation &amp; More | Fresno, CA</title>
+<meta name="description" content="Trusted home services in the Central Valley. Professional window cleaning, rain gutter cleaning &amp; installation, gutter guards, water filtration, and exterior cleaning. Free estimates!">
+<meta name="keywords" content="window cleaning Fresno, gutter cleaning Central Valley, gutter installation Visalia, gutter guards, water filtration, exterior cleaning, power washing, home services Fresno CA">
+<meta property="og:title" content="Central Valley Home Services | Professional Home Services in the Central Valley">
+<meta property="og:description" content="Trusted home services in the Central Valley. Window cleaning, gutter services, water filtration, and exterior cleaning. Free estimates!">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/logo.png">
+<link rel="icon" type="image/png" href="images/logo.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Central Valley Home Services",
+  "description": "Professional home services including window cleaning, rain gutter cleaning and installation, gutter guard installs, whole house water filtration, and exterior cleaning.",
+  "areaServed": [
+    {"@type": "City", "name": "Fresno"},
+    {"@type": "City", "name": "Visalia"},
+    {"@type": "City", "name": "Tulare"},
+    {"@type": "City", "name": "Hanford"},
+    {"@type": "City", "name": "Clovis"},
+    {"@type": "City", "name": "Madera"},
+    {"@type": "City", "name": "Merced"}
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "CA",
+    "addressLocality": "Fresno"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Home Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Window Cleaning"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Rain Gutter Cleaning"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Rain Gutter Installation"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Gutter Guard Installation"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Whole House Water Filtration"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Exterior Cleaning"}}
+    ]
+  }
+}
+</script>
+<style>
+:root {
+  --gold: #D4A843;
+  --gold-dark: #B8922E;
+  --gold-light: #E8C96A;
+  --black: #1a1a1a;
+  --dark: #222;
+  --gray: #555;
+  --light-gray: #f5f5f5;
+  --white: #fff;
+  --shadow: 0 4px 20px rgba(0,0,0,0.1);
+  --shadow-lg: 0 8px 40px rgba(0,0,0,0.15);
+  --radius: 12px;
+  --transition: all 0.3s ease;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: var(--dark); line-height: 1.7; }
+
+/* NAVIGATION */
+.nav { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: var(--black); padding: 0 2rem; transition: var(--transition); }
+.nav.scrolled { background: rgba(26,26,26,0.97); box-shadow: var(--shadow); }
+.nav-inner { max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 75px; }
+.nav-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.nav-logo img { height: 55px; width: auto; }
+.nav-logo span { color: var(--gold); font-weight: 700; font-size: 1.1rem; letter-spacing: 0.5px; }
+.nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
+.nav-links a { color: var(--white); text-decoration: none; font-size: 0.95rem; font-weight: 500; transition: var(--transition); position: relative; }
+.nav-links a:hover { color: var(--gold); }
+.nav-cta { background: var(--gold); color: var(--black) !important; padding: 10px 24px; border-radius: 50px; font-weight: 700 !important; transition: var(--transition); }
+.nav-cta:hover { background: var(--gold-light); transform: translateY(-2px); }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 5px; }
+.hamburger span { width: 28px; height: 3px; background: var(--gold); border-radius: 3px; transition: var(--transition); }
+
+/* HERO */
+.hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; background: linear-gradient(135deg, var(--black) 0%, #2a2a2a 50%, var(--black) 100%); padding: 120px 2rem 80px; position: relative; overflow: hidden; }
+.hero::before { content: ''; position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(ellipse at center, rgba(212,168,67,0.08) 0%, transparent 60%); animation: pulse 8s ease-in-out infinite; }
+@keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.1); } }
+.hero-content { position: relative; z-index: 2; max-width: 800px; }
+.hero-logo { width: 150px; height: auto; margin-bottom: 2rem; filter: drop-shadow(0 4px 20px rgba(212,168,67,0.3)); }
+.hero h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); color: var(--white); font-weight: 800; margin-bottom: 1rem; line-height: 1.2; }
+.hero h1 .gold { color: var(--gold); }
+.hero p { font-size: clamp(1rem, 2vw, 1.25rem); color: #ccc; margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+.btn { display: inline-block; padding: 14px 36px; border-radius: 50px; font-weight: 700; font-size: 1rem; text-decoration: none; transition: var(--transition); cursor: pointer; border: none; }
+.btn-gold { background: var(--gold); color: var(--black); }
+.btn-gold:hover { background: var(--gold-light); transform: translateY(-3px); box-shadow: 0 8px 25px rgba(212,168,67,0.4); }
+.btn-outline { border: 2px solid var(--gold); color: var(--gold); background: transparent; margin-left: 1rem; }
+.btn-outline:hover { background: var(--gold); color: var(--black); transform: translateY(-3px); }
+
+/* SECTIONS */
+section { padding: 80px 2rem; }
+.section-header { text-align: center; margin-bottom: 3.5rem; }
+.section-header h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); color: var(--black); margin-bottom: 0.75rem; }
+.section-header .accent-line { width: 60px; height: 4px; background: var(--gold); margin: 0 auto 1rem; border-radius: 2px; }
+.section-header p { color: var(--gray); max-width: 600px; margin: 0 auto; font-size: 1.05rem; }
+.container { max-width: 1200px; margin: 0 auto; }
+
+/* SERVICES */
+.services { background: var(--light-gray); }
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+.service-card { background: var(--white); border-radius: var(--radius); padding: 2.5rem 2rem; text-align: center; box-shadow: var(--shadow); transition: var(--transition); position: relative; overflow: hidden; }
+.service-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--gold); transform: scaleX(0); transition: var(--transition); }
+.service-card:hover::before { transform: scaleX(1); }
+.service-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); }
+.service-icon { width: 70px; height: 70px; margin: 0 auto 1.5rem; background: linear-gradient(135deg, var(--gold), var(--gold-dark)); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+.service-icon svg { width: 34px; height: 34px; fill: var(--white); }
+.service-card h3 { font-size: 1.25rem; margin-bottom: 0.75rem; color: var(--black); }
+.service-card p { color: var(--gray); font-size: 0.95rem; line-height: 1.6; }
+.service-card .service-link { display: inline-block; margin-top: 1rem; color: var(--gold-dark); font-weight: 600; text-decoration: none; transition: var(--transition); }
+.service-card .service-link:hover { color: var(--gold); }
+
+/* ABOUT */
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+.about-img { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); position: relative; }
+.about-img img { width: 100%; height: auto; display: block; }
+.about-img::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 4px; background: var(--gold); }
+.about-text h2 { font-size: 2rem; margin-bottom: 1rem; color: var(--black); }
+.about-text .accent-line { width: 60px; height: 4px; background: var(--gold); margin-bottom: 1.5rem; border-radius: 2px; }
+.about-text p { color: var(--gray); margin-bottom: 1rem; font-size: 1.05rem; }
+
+/* WHY CHOOSE US */
+.why-us { background: var(--black); color: var(--white); }
+.why-us .section-header h2 { color: var(--white); }
+.why-us .section-header p { color: #aaa; }
+.why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+.why-card { text-align: center; padding: 2rem 1.5rem; border: 1px solid rgba(212,168,67,0.2); border-radius: var(--radius); transition: var(--transition); }
+.why-card:hover { border-color: var(--gold); background: rgba(212,168,67,0.05); }
+.why-icon { font-size: 2.5rem; margin-bottom: 1rem; }
+.why-card h3 { color: var(--gold); margin-bottom: 0.5rem; font-size: 1.1rem; }
+.why-card p { color: #aaa; font-size: 0.95rem; }
+
+/* TESTIMONIALS */
+.testimonials { background: var(--light-gray); }
+.testimonial-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+.testimonial-card { background: var(--white); padding: 2rem; border-radius: var(--radius); box-shadow: var(--shadow); position: relative; }
+.testimonial-card::before { content: '\201C'; font-size: 4rem; color: var(--gold); position: absolute; top: 10px; left: 20px; line-height: 1; font-family: Georgia, serif; }
+.testimonial-card p { color: var(--gray); font-style: italic; margin-bottom: 1.5rem; padding-top: 2rem; line-height: 1.7; }
+.testimonial-author { display: flex; align-items: center; gap: 12px; }
+.testimonial-avatar { width: 48px; height: 48px; border-radius: 50%; background: var(--gold); display: flex; align-items: center; justify-content: center; font-weight: 700; color: var(--black); font-size: 1.1rem; }
+.testimonial-info strong { display: block; color: var(--black); font-size: 0.95rem; }
+.testimonial-info span { color: var(--gray); font-size: 0.85rem; }
+.stars { color: var(--gold); letter-spacing: 2px; margin-bottom: 0.5rem; }
+
+/* SERVICE AREA */
+.service-area { background: var(--white); }
+.area-tags { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; margin-top: 2rem; }
+.area-tag { background: var(--light-gray); border: 2px solid transparent; padding: 10px 24px; border-radius: 50px; font-weight: 600; color: var(--dark); transition: var(--transition); }
+.area-tag:hover { border-color: var(--gold); background: rgba(212,168,67,0.1); color: var(--gold-dark); }
+
+/* FORM */
+.quote-section { background: linear-gradient(135deg, var(--black), #2a2a2a); color: var(--white); }
+.quote-section .section-header h2 { color: var(--white); }
+.quote-section .section-header p { color: #aaa; }
+.form-container { max-width: 700px; margin: 0 auto; background: var(--white); border-radius: var(--radius); padding: 3rem; box-shadow: var(--shadow-lg); }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+.form-group { display: flex; flex-direction: column; }
+.form-group.full { grid-column: 1 / -1; }
+.form-group label { font-weight: 600; color: var(--dark); margin-bottom: 0.4rem; font-size: 0.9rem; }
+.form-group label .req { color: #e74c3c; }
+.form-group input, .form-group select, .form-group textarea { padding: 12px 16px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem; font-family: inherit; transition: var(--transition); outline: none; color: var(--dark); }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(212,168,67,0.15); }
+.form-group textarea { resize: vertical; min-height: 100px; }
+.form-submit { text-align: center; margin-top: 1.5rem; }
+.form-submit .btn { width: 100%; max-width: 300px; font-size: 1.1rem; padding: 16px 36px; }
+.form-success { display: none; text-align: center; padding: 2rem; }
+.form-success h3 { color: var(--gold-dark); font-size: 1.5rem; margin-bottom: 0.5rem; }
+.form-success p { color: var(--gray); }
+
+/* FOOTER */
+.footer { background: var(--black); color: #aaa; padding: 3rem 2rem; text-align: center; }
+.footer-inner { max-width: 1200px; margin: 0 auto; }
+.footer-logo { height: 60px; margin-bottom: 1rem; }
+.footer-links { display: flex; justify-content: center; gap: 2rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+.footer-links a { color: #aaa; text-decoration: none; transition: var(--transition); }
+.footer-links a:hover { color: var(--gold); }
+.footer-contact { margin-bottom: 1.5rem; }
+.footer-contact a { color: var(--gold); text-decoration: none; }
+.footer-social { display: flex; justify-content: center; gap: 1rem; margin-bottom: 1.5rem; }
+.footer-social a { width: 42px; height: 42px; border: 2px solid rgba(212,168,67,0.3); border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: var(--transition); }
+.footer-social a:hover { background: var(--gold); border-color: var(--gold); }
+.footer-social svg { width: 18px; height: 18px; fill: var(--gold); transition: var(--transition); }
+.footer-social a:hover svg { fill: var(--black); }
+.footer p.copy { font-size: 0.85rem; color: #666; }
+
+/* ANIMATIONS */
+.fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.fade-in.visible { opacity: 1; transform: translateY(0); }
+
+/* MOBILE */
+@media (max-width: 992px) {
+  .services-grid, .why-grid, .testimonial-grid { grid-template-columns: repeat(2, 1fr); }
+  .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+}
+@media (max-width: 768px) {
+  .hamburger { display: flex; }
+  .nav-links { position: fixed; top: 75px; left: 0; right: 0; background: var(--black); flex-direction: column; padding: 2rem; gap: 1.5rem; transform: translateY(-120%); transition: var(--transition); opacity: 0; }
+  .nav-links.open { transform: translateY(0); opacity: 1; }
+  .services-grid, .why-grid, .testimonial-grid { grid-template-columns: 1fr; }
+  .form-grid { grid-template-columns: 1fr; }
+  .btn-outline { margin-left: 0; margin-top: 1rem; }
+  .hero { min-height: auto; padding: 140px 1.5rem 80px; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo" aria-label="Central Valley Home Services - Home">
+      <img src="images/logo.png" alt="Central Valley Home Services Logo" width="55" height="55" loading="eager">
+      <span>Central Valley<br>Home Services</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#why-us">Why Us</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
+      <li><a href="#service-area">Service Area</a></li>
+      <li><a href="#quote" class="nav-cta">Get a Free Quote</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="hero-content">
+    <img src="images/logo.png" alt="Central Valley Home Services shield logo" class="hero-logo" width="150" height="150" loading="eager">
+    <h1>Your Central Valley Home, <span class="gold">Our Priority</span></h1>
+    <p>Trusted, locally owned home services. From sparkling windows to flawless gutters and clean water — we treat every home like our own.</p>
+    <div>
+      <a href="#quote" class="btn btn-gold">Get a Free Estimate</a>
+      <a href="#services" class="btn btn-outline">Our Services</a>
+    </div>
+  </div>
+</header>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2>Our Professional Services</h2>
+      <div class="accent-line"></div>
+      <p>Comprehensive home services delivered with quality, care, and attention to detail across the Central Valley.</p>
+    </div>
+    <div class="services-grid">
+      <article class="service-card fade-in">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16v16H4V4zm2 2v12h12V6H6zm3 3h6v2H9V9zm0 4h4v2H9v-2z"/></svg>
+        </div>
+        <h3>Window Cleaning</h3>
+        <p>Crystal-clear, streak-free windows inside and out. Residential and commercial properties serviced with professional-grade equipment and eco-friendly solutions.</p>
+        <a href="#quote" class="service-link">Get a Quote &rarr;</a>
+      </article>
+      <article class="service-card fade-in">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2L4 8v2h2v10h12V10h2V8l-8-6zm0 2.5L18 9H6l6-4.5zM8 12h8v6H8v-6z"/></svg>
+        </div>
+        <h3>Rain Gutter Cleaning</h3>
+        <p>Thorough gutter and downspout cleaning to prevent water damage, mold, and foundation issues. We remove all debris and flush your system completely.</p>
+        <a href="#quote" class="service-link">Get a Quote &rarr;</a>
+      </article>
+      <article class="service-card fade-in">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M3 21h18v-2H3v2zm0-4h18v-2H3v2zm0-4h18v-2H3v2zm0-4h18V7H3v2zm0-6v2h18V3H3z"/></svg>
+        </div>
+        <h3>Rain Gutter Installs</h3>
+        <p>Custom-fit seamless gutter installation using durable, high-quality materials. Protect your home from water damage with a professional gutter system built to last.</p>
+        <a href="#quote" class="service-link">Get a Quote &rarr;</a>
+      </article>
+      <article class="service-card fade-in">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 2.18l7 3.12v5.7c0 4.83-3.23 9.36-7 10.58-3.77-1.22-7-5.75-7-10.58V6.3l7-3.12zM11 7v2h2V7h-2zm0 4v6h2v-6h-2z"/></svg>
+        </div>
+        <h3>Gutter Guard Installs</h3>
+        <p>Premium gutter guard systems that prevent clogs, reduce maintenance, and extend the life of your gutters. Keep leaves and debris out year-round.</p>
+        <a href="#quote" class="service-link">Get a Quote &rarr;</a>
+      </article>
+      <article class="service-card fade-in">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+        </div>
+        <h3>Whole House Water Filtration</h3>
+        <p>Clean, safe water from every tap in your home. Our whole-house filtration systems remove contaminants, improve taste, and protect your family's health.</p>
+        <a href="#quote" class="service-link">Get a Quote &rarr;</a>
+      </article>
+      <article class="service-card fade-in">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41zM3 3h18v2H3V3zm0 16h18v2H3v-2z"/></svg>
+        </div>
+        <h3>Exterior Cleaning</h3>
+        <p>Power washing and soft washing for your home's exterior, driveways, patios, decks, and fences. Restore your property's curb appeal safely and effectively.</p>
+        <a href="#quote" class="service-link">Get a Quote &rarr;</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img fade-in">
+        <img src="images/owner.png" alt="Patrick Lynch, owner of Central Valley Home Services, standing in front of a home" width="600" height="450" loading="lazy">
+      </div>
+      <div class="about-text fade-in">
+        <h2>Locally Owned. Personally Committed.</h2>
+        <div class="accent-line"></div>
+        <p>Hi, I'm <strong>Patrick Lynch</strong>, founder and owner of Central Valley Home Services. I started this company with one simple mission: deliver honest, high-quality home services that our neighbors can count on.</p>
+        <p>As a Central Valley resident myself, I understand the unique challenges our homes face — from hard water and valley dust to seasonal storms. Every job we take on is treated with the same care I'd give my own home.</p>
+        <p>Whether you need spotless windows, reliable gutters, or clean water for your family, we're here to help. We're fully licensed, insured, and committed to 100% customer satisfaction on every project.</p>
+        <a href="#quote" class="btn btn-gold" style="margin-top:1rem;">Schedule Your Free Estimate</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why-us" id="why-us">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2>Why Choose Central Valley Home Services</h2>
+      <div class="accent-line"></div>
+      <p>We set the standard for quality, reliability, and customer care in every service we provide.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-card fade-in">
+        <div class="why-icon">&#9989;</div>
+        <h3>Licensed &amp; Insured</h3>
+        <p>Fully licensed and insured for your complete peace of mind on every project.</p>
+      </div>
+      <div class="why-card fade-in">
+        <div class="why-icon">&#128176;</div>
+        <h3>Free Estimates</h3>
+        <p>No-obligation, transparent quotes so you know exactly what to expect before we start.</p>
+      </div>
+      <div class="why-card fade-in">
+        <div class="why-icon">&#11088;</div>
+        <h3>100% Satisfaction</h3>
+        <p>We stand behind every job. If you're not happy, we'll make it right — guaranteed.</p>
+      </div>
+      <div class="why-card fade-in">
+        <div class="why-icon">&#127968;</div>
+        <h3>Locally Owned</h3>
+        <p>Proudly serving our neighbors in the Central Valley. We live and work right here.</p>
+      </div>
+      <div class="why-card fade-in">
+        <div class="why-icon">&#11088;</div>
+        <h3>5-Star Rated</h3>
+        <p>Consistently top-rated by our customers for quality workmanship and reliable service.</p>
+      </div>
+      <div class="why-card fade-in">
+        <div class="why-icon">&#127807;</div>
+        <h3>Eco-Friendly Products</h3>
+        <p>We use environmentally safe cleaning solutions that are tough on grime, gentle on your home.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2>What Our Customers Say</h2>
+      <div class="accent-line"></div>
+      <p>Don't just take our word for it — hear from homeowners across the Central Valley.</p>
+    </div>
+    <div class="testimonial-grid">
+      <div class="testimonial-card fade-in">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Patrick and his team did an incredible job cleaning our windows and gutters. Our home looks brand new! Punctual, professional, and very fairly priced. We'll definitely be calling them again.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">M</div>
+          <div class="testimonial-info">
+            <strong>Maria G.</strong>
+            <span>Fresno, CA</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-in">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>Had new gutters and gutter guards installed on our farmhouse. The quality of work was outstanding. Patrick personally oversaw everything and made sure we were 100% satisfied. Highly recommend!</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">D</div>
+          <div class="testimonial-info">
+            <strong>David R.</strong>
+            <span>Visalia, CA</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card fade-in">
+        <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <p>The whole house water filtration system they installed changed our lives. Our water tastes amazing now and I feel good about what my kids are drinking. Best investment we've made for our home.</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">S</div>
+          <div class="testimonial-info">
+            <strong>Sarah T.</strong>
+            <span>Clovis, CA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="service-area" id="service-area">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2>Proudly Serving the Central Valley</h2>
+      <div class="accent-line"></div>
+      <p>We provide professional home services to communities throughout California's Central Valley region.</p>
+    </div>
+    <div class="area-tags fade-in">
+      <span class="area-tag">Fresno</span>
+      <span class="area-tag">Clovis</span>
+      <span class="area-tag">Visalia</span>
+      <span class="area-tag">Tulare</span>
+      <span class="area-tag">Hanford</span>
+      <span class="area-tag">Madera</span>
+      <span class="area-tag">Merced</span>
+      <span class="area-tag">Selma</span>
+      <span class="area-tag">Kingsburg</span>
+      <span class="area-tag">Reedley</span>
+      <span class="area-tag">Porterville</span>
+      <span class="area-tag">Lemoore</span>
+      <span class="area-tag">Dinuba</span>
+      <span class="area-tag">Sanger</span>
+      <span class="area-tag">&amp; Surrounding Areas</span>
+    </div>
+  </div>
+</section>
+
+<!-- QUOTE FORM -->
+<section class="quote-section" id="quote">
+  <div class="container">
+    <div class="section-header fade-in">
+      <h2>Get Your Free Quote Today</h2>
+      <div class="accent-line"></div>
+      <p>Fill out the form below and we'll get back to you within 24 hours with a free, no-obligation estimate.</p>
+    </div>
+    <div class="form-container fade-in">
+      <form id="quoteForm" novalidate>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="fullName">Full Name <span class="req">*</span></label>
+            <input type="text" id="fullName" name="fullName" required placeholder="John Smith">
+          </div>
+          <div class="form-group">
+            <label for="email">Email <span class="req">*</span></label>
+            <input type="email" id="email" name="email" required placeholder="john@example.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number <span class="req">*</span></label>
+            <input type="tel" id="phone" name="phone" required placeholder="(559) 000-0000">
+          </div>
+          <div class="form-group">
+            <label for="address">Property Address</label>
+            <input type="text" id="address" name="address" placeholder="123 Main St, Fresno, CA">
+          </div>
+          <div class="form-group">
+            <label for="service">Service Needed <span class="req">*</span></label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service...</option>
+              <option value="Window Cleaning">Window Cleaning</option>
+              <option value="Rain Gutter Cleaning">Rain Gutter Cleaning</option>
+              <option value="Rain Gutter Installation">Rain Gutter Installation</option>
+              <option value="Gutter Guard Installation">Gutter Guard Installation</option>
+              <option value="Whole House Water Filtration">Whole House Water Filtration</option>
+              <option value="Exterior Cleaning">Exterior Cleaning</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="preferredDate">Preferred Date</label>
+            <input type="date" id="preferredDate" name="preferredDate">
+          </div>
+          <div class="form-group">
+            <label for="referral">How Did You Hear About Us?</label>
+            <select id="referral" name="referral">
+              <option value="" disabled selected>Select one...</option>
+              <option value="Google">Google</option>
+              <option value="Facebook">Facebook</option>
+              <option value="Referral">Referral / Word of Mouth</option>
+              <option value="Nextdoor">Nextdoor</option>
+              <option value="Yelp">Yelp</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-group full">
+            <label for="details">Additional Details</label>
+            <textarea id="details" name="details" placeholder="Tell us about your project — number of windows, home size, any special requests..."></textarea>
+          </div>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn btn-gold" id="submitBtn">Submit Request</button>
+        </div>
+      </form>
+      <div class="form-success" id="formSuccess">
+        <h3>Thank You!</h3>
+        <p>Your request has been submitted successfully. We'll contact you within 24 hours with your free estimate.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="footer-inner">
+    <img src="images/logo.png" alt="Central Valley Home Services" class="footer-logo" width="60" height="60" loading="lazy">
+    <div class="footer-links">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#service-area">Service Area</a>
+      <a href="#quote">Get a Quote</a>
+    </div>
+    <div class="footer-contact">
+      <p><a href="tel:5590000000">(559) 000-0000</a> &nbsp;|&nbsp; <a href="mailto:info@centralvalleyhomeservices.com">info@centralvalleyhomeservices.com</a></p>
+    </div>
+    <div class="footer-social">
+      <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3V2z"/></svg></a>
+      <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M16 4H8a4 4 0 00-4 4v8a4 4 0 004 4h8a4 4 0 004-4V8a4 4 0 00-4-4zm2 12a2 2 0 01-2 2H8a2 2 0 01-2-2V8a2 2 0 012-2h8a2 2 0 012 2v8zm-6-7a3 3 0 100 6 3 3 0 000-6zm4.5-1a1 1 0 100-2 1 1 0 000 2z"/></svg></a>
+      <a href="#" aria-label="Yelp"><svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg></a>
+      <a href="#" aria-label="Nextdoor"><svg viewBox="0 0 24 24"><path d="M12 3L4 9v12h5v-7h6v7h5V9l-8-6z"/></svg></a>
+    </div>
+    <p class="copy">&copy; 2026 Central Valley Home Services. All Rights Reserved. | Serving the Central Valley, California</p>
+  </div>
+</footer>
+
+<script>
+// Mobile menu toggle
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
+  const isOpen = navLinks.classList.contains('open');
+  hamburger.setAttribute('aria-expanded', isOpen);
+});
+// Close menu on link click
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+  });
+});
+
+// Sticky nav shadow on scroll
+const nav = document.querySelector('.nav');
+window.addEventListener('scroll', () => {
+  nav.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// Intersection Observer for fade-in animations
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+// Form submission
+const form = document.getElementById('quoteForm');
+const submitBtn = document.getElementById('submitBtn');
+const formSuccess = document.getElementById('formSuccess');
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  // Validate required fields
+  const fullName = form.fullName.value.trim();
+  const email = form.email.value.trim();
+  const phone = form.phone.value.trim();
+  const service = form.service.value;
+  if (!fullName || !email || !phone || !service) {
+    alert('Please fill out all required fields.');
+    return;
+  }
+  // Email validation
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert('Please enter a valid email address.');
+    return;
+  }
+  submitBtn.textContent = 'Submitting...';
+  submitBtn.disabled = true;
+  const data = {
+    fullName,
+    email,
+    phone,
+    address: form.address.value.trim(),
+    service,
+    preferredDate: form.preferredDate.value,
+    referral: form.referral.value,
+    details: form.details.value.trim(),
+    timestamp: new Date().toISOString()
+  };
+  try {
+    const SCRIPT_URL = 'https://script.google.com/macros/s/PLACEHOLDER/exec';
+    await fetch(SCRIPT_URL, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    form.style.display = 'none';
+    formSuccess.style.display = 'block';
+    form.reset();
+  } catch (err) {
+    alert('Something went wrong. Please try again or call us directly.');
+  } finally {
+    submitBtn.textContent = 'Submit Request';
+    submitBtn.disabled = false;
+  }
+});
+</script>
+</body>
+</html>
